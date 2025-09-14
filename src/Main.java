@@ -49,7 +49,7 @@ public class Main {
                     System.out.print("Nhập ngành (CNTT/KTPM): "); String m = sc.nextLine();
                     printList(dao.getByMajor(m)); break;
                 case 7:
-                    List<Student> sortedList = dao.getAll();  // đổi tên biến để tránh trùng
+                    List<Student> sortedList = dao.getAll();  
                     sortedList.sort(Comparator.comparingDouble(Student::getGpa).reversed());
                     printList(sortedList);
                     break;

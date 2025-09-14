@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/studentmanager"; // tên DB trong MySQL
-    private static final String USER = "root"; // user mặc định của XAMPP
-    private static final String PASSWORD = ""; // nếu bạn không đặt mật khẩu thì để rỗng ""
+    private static final String URL = "jdbc:mysql://localhost:3306/studentmanager"; 
+    private static final String USER = "root"; 
+    private static final String PASSWORD = "";
 
     public static Connection getConnection() throws SQLException {
         try {
